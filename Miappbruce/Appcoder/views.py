@@ -1,5 +1,5 @@
 from django.shortcuts import render
-
+from django.http import HttpResponse
 import datetime
 from .models import Producto, Cliente, RecursoHumano
 
@@ -18,7 +18,8 @@ def cliente_list(request):
     return render (request,'cliente_list.html',{'cliente':cliente})
 
 
-
 def index(request):
-    return render(request, 'index.html')
+    return render(request,'index.html')
 
+def index2(request):
+    return HttpResponse('<h1>hola walter<h1>')
