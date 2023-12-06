@@ -1,7 +1,7 @@
 from django.db import models
 
 class Producto(models.Model):
-    nombre = models.CharField(max_length=100)
+    Nombre = models.CharField(max_length=100)
     categoria = models.TextField()
 
 class Cliente(models.Model):
